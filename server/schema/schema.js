@@ -1,5 +1,3 @@
-const { projects, clients } = require("../sampleData.js");
-// Mongoose models
 const Project = require("../models/Project.js");
 const Client = require("../models/Client.js");
 
