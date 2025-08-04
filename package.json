@@ -1,0 +1,19 @@
+{
+  "name": "projoe",
+  "version": "1.0.0",
+  "description": "Project management app that uses GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oluoko/projoe.git"
+  },
+  "author": "Oluoko Brian Otieno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oluoko/projoe/issues"
+  },
+  "homepage": "https://github.com/oluoko/projoe#readme"
+}
