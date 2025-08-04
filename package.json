@@ -19,6 +19,7 @@
   "homepage": "https://github.com/oluoko/projoe#readme",
   "dependencies": {
     "colors": "^1.4.0",
+    "concurrently": "^9.2.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "express-graphql": "^0.12.0",
