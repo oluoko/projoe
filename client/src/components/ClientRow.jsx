@@ -2,6 +2,7 @@ import { FaTrash as TrashIcon } from "react-icons/fa";
 import { useMutation } from "@apollo/client";
 import { DELETE_CLIENT } from "../mutations/clientMutations";
 import { GET_CLIENTS } from "../queries/clientQueries";
+import UpdateClientModal from "./updateClientModal";
 
 export default function ClientRow({ client }) {
   const [deleteClient] = useMutation(DELETE_CLIENT, {
@@ -22,6 +23,9 @@ export default function ClientRow({ client }) {
       <td>{client.name}</td>
       <td>{client.email}</td>
       <td>{client.phone}</td>
+      <td>
+        <UpdateClientModal client={client} />
+      </td>
       <td>
         <button className="btn btn-danger btn-sm" onClick={deleteClient}>
           <TrashIcon />

@@ -11,23 +11,28 @@ export default function Clients() {
 
   return (
     <div>
-      {!loading && !error && (
-        <table className="table table-hover mt-3">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.clients.map((client) => (
-              <ClientRow key={client.id} client={client} />
-            ))}
-          </tbody>
-        </table>
-      )}
+      {!loading &&
+        !error &&
+        (data.clients.length > 0 ? (
+          <table className="table table-hover mt-3">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.clients.map((client) => (
+                <ClientRow key={client.id} client={client} />
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <p className="d-flex justify-content-center">No clients found</p>
+        ))}
     </div>
   );
 }
