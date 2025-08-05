@@ -105,7 +105,7 @@ export default function AddClientModal() {
                   data-bs-dismiss="modal"
                   className="btn btn-secondary"
                 >
-                  Submit
+                  Add Client
                 </button>
               </form>
             </div>
